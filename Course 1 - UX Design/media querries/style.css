@@ -1,0 +1,62 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* CSS RESET ENDS */
+
+/* Default Sytling - DESKTOP */
+body {
+    background-color: #1f1f1f;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    width: 17.5%;
+    padding: 10px;
+    height: 600px;
+}
+
+.red {
+    background-color: red;
+    background-image: url('./img/dog.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.white {
+    background-color: white;
+    background-image: url('./img/cat.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Media Querries */
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 33%;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 100%;
+    }
+}

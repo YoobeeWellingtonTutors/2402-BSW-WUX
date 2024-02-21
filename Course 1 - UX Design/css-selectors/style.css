@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+    justify-content: center;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: 10px 0px
+}
+
+.navlink {
+    margin-right: 20px;
+    list-style: none;  
+}
+
+.navlink a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    transition: color 0.4s ease;
+}
+
+.navlink:nth-child(1) a {
+    color: red;
+}
+
+.navlink:nth-child(2) a {
+    color: blue;
+}
+
+.navlink:nth-child(3) a {
+    color: green;
+}
+
+.navlink:nth-child(4) a {
+    color: yellow;
+}
+
+.navlink a:hover {
+    color: black;
+    transition: color 0.4s ease;
+}
+
+.image-container {
+    width: 100vw;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 25%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: scale 0.4s ease;
+    transition: rotate 0.4s ease;
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.image-container img:hover {
+    scale: 1.2;
+    transition: scale 0.4s ease;
+    rotate: 360deg;
+    transition: rotate 0.4s ease;
+}
+
+.image-container p {
+    color: white;
+    font-size: 4em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 5px;
+    animation: color-change 2s ease infinite reverse;
+}
+
+@keyframes color-change {
+    25% {
+        color: blue;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: purple
+    }
+}

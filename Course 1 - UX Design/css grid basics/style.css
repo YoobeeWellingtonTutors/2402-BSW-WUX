@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* gap: 4rem; */
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 400px;
+    background-color: purple;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+    .grid-parent {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .grid-parent {
+        grid-template-columns: 1fr;
+    }
+}
