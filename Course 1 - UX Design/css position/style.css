@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498bd;
+    text-align: center;
+    margin: 10px;
+}
+
+.static {
+    /* default positioning is static */
+}
+
+.relative {
+    position: relative; /* moves "relative" to original position  */
+    top: 20px;
+    left: 50px;
+    /* bottom: 200px;
+    right: 20px; */
+    background-color: yellow;
+}
+
+.absolute {
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fixed {
+    position: fixed;
+    top: 60px;
+    left: 200px;
+    z-index: 10;
+    background-color: red;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: green;
+}
+
+/* Image with caption Example: */
+
+.img-container {
+    position: relative;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    background-image: url('./animal.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 30px;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}

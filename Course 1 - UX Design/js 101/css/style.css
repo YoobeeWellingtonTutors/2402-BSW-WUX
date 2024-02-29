@@ -1,0 +1,34 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+}
+
+.hide {
+    display: none;
+}
+
+.toggle {
+    background-color: blueviolet;
+    animation: colourchange 2s ease infinite;
+}
+
+@keyframes colourchange {
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    75% {
+        background-color: pink;
+    }
+}

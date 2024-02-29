@@ -1,0 +1,63 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Specific styles using IDs */
+#box1 {
+  background-color: #ffcccc;
+}
+
+#box2 {
+  background-color: #ccffcc;
+}
+
+#box3 {
+  background-color: #ccccff;
+}
+
+/* Specific styles using classes */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* Advanced selectors */
+/* Targeting the first box */
+#container > .box:first-child {
+  background-color: yellow;
+}
+
+/* Targeting the last box */
+#container > .box:last-child {
+  background-color: cyan;
+}
+
+/* Targeting even boxes */
+#container > .box:nth-child(even) {
+  transform: rotate(45deg);
+}
+
+/* Targeting odd boxes */
+#container > .box:nth-child(odd) {
+  transform: rotate(-45deg);
+}
+
+/* Targeting boxes with even IDs */
+#container > .box[id^="box"]:nth-child(even) {
+  border-color: red;
+}
+
+/* Targeting boxes with odd IDs */
+#container > .box[id^="box"]:nth-child(odd) {
+  border-color: blue;
+}
