@@ -1,0 +1,53 @@
+/* GLOBAL CSS RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* BLOCK STYLES */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    overflow: hidden;
+}
+
+/* ELEMENT STYLES */
+.card__image{
+    width: 100%;
+    display: block;
+}
+
+.card__content {
+    padding: 20px;
+}
+
+.card__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* MODIFIER STYLES */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn--primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: #0056b3;
+}

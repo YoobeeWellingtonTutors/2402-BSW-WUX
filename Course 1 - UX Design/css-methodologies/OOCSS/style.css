@@ -1,0 +1,63 @@
+/* GLOBAL CSS RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global reset ends */
+
+/* VARIABLES */
+
+:root {
+    --primary-color: purple;
+    --secondary-color: yellow;
+    --font: Arial, sans-serif;
+}
+
+/* to use a variable use the var() function */
+
+/* GLOBAL RULES */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #065580; 
+}
+
+/* OOCSS - start at the highest level and work down */
+
+/* Card Styling: */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-family: var(--font);
+}
+
+  
