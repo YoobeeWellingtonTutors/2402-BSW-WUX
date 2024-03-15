@@ -1,4 +1,4 @@
-<!-- ![Project Logo](https://example.com/logo.png) -->
+![Project Logo](https://source.unsplash.com/f77Bh3inUpE)
 
 # 2402-BSW-WUX CLASS REPO 🚀
 
