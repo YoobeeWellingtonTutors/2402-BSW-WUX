@@ -1,3 +1,5 @@
+<!-- ![Project Logo](https://example.com/logo.png) -->
+
 # 2402-BSW-WUX CLASS REPO 🚀
 
 This repository has been built to house the code demos for the 2402 intake.
