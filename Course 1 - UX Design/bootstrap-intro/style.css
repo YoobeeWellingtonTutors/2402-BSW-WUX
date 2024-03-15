@@ -1,0 +1,26 @@
+.container {
+    background-color: beige;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    min-height: 100px;
+}
+
+.box1 {
+    background-color: yellow;
+}
+
+.box2 {
+    background-color: green;
+}
+
+.box3 {
+    background-color: blue;
+}
+
+.box4 {
+    background-color: purple;
+}
