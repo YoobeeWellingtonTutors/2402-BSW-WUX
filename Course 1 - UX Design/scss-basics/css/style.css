@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container .header {
+  background-color: #3498db;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+.container .header h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+}
+
+.container .content {
+  padding: 20px;
+  background-color: #2ecc71;
+  color: white;
+  border-radius: 10px;
+}
+
+.container .content p {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

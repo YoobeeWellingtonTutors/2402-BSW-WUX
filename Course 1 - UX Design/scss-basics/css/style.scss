@@ -1,0 +1,51 @@
+@import 'variables'; // using partial and import to include the partial
+
+// 2. Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// 3. Nested Selectors
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+  .header {
+    background-color: $primary-color;
+    padding: $base-padding;
+    color: white;
+    @include border-radius(5px);
+    h1 {
+      font-family: $font-stack;
+      font-size: 24px;
+    }
+  }
+
+  .content {
+    padding: $base-padding;
+    background-color: $secondary-color;
+    color: white;
+    @include border-radius(10px);
+    p {
+      font-family: $font-stack;
+      font-size: 16px;
+    }
+  }
+}
+
+// 4. Includes
+// Define a mixin for media queries
+@mixin respond-to($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@include respond-to(600px) {
+  .container {
+    max-width: 400px;
+  }
+}
