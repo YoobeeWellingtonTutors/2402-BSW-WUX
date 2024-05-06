@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Inputs - Getting User Input</title>
+</head>
+<body>
+
+    <form>
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <!-- SELECT -->
+            <select name="country" id="country">
+                <option value="New Zealand">New Zealand</option>
+                <option value="Australia">Australia</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States of America">United States of America</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="Wellington">Wellington</option>
+                <option value="Sydney">Sydney</option>
+                <option value="London">London</option>
+                <option value="Austin">Austin</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="postcode">Post Code:</label>
+            <input type="text" id="postcode" name="postcode" required>
+        </div>
+        <div class="form-group">
+            <label for="contact-phone">Contact Phone:</label>
+            <input type="text" id="contact-phone" name="contact-phone" required>
+        </div>
+        
+        <div class="form-group">
+            <button id="submitBtn">Sign Up</button>
+        </div>
+    </form>
+
+    <div id="results">
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

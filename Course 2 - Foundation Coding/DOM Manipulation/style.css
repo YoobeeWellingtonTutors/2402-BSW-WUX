@@ -1,0 +1,23 @@
+#myElement {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+
+.myElement {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+}
+
+.red {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.hover {
+    background-color: darkorange !important;
+    transition: all 0.3s ease;
+}
