@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MapBox CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom JS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Map Box</title>
+</head>
+<body>
+
+    <!-- MapBox is looking for a container -->
+    <div class="map-container">
+        <div id="map"></div>
+        <!-- Create empty divs for my markers -->
+        <div id="custom-marker1"></div>
+        <div id="custom-marker2"></div>
+    </div>
+
+    <!-- Create a fly to button -->
+    <button id="fly-to-eb">Fly to Eb Games</button>
+    
+
+    <!-- MapBox JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <!-- Custom Js -->
+    <script src="./script.js"></script>
+</body>
+</html>
