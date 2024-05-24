@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fullpage CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css" integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Fullpage JS Demo</title>
+</head>
+<body>
+    <nav id="#navbar"></nav>
+    <!-- Fullpage container - must be present for fullpage to work -->
+    <div id="fullpage">
+        <!-- SECTIONS - these are the verticals - must have atleast 1 -->
+        <!-- SLIDES - horizontal - live inside of SECTIONS -->
+        <div class="section">
+            <!-- Slides go inside a section -->
+            <div class="slide">
+                <h2>Welcome</h2>
+                <form id="signupForm">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button id="submitButton">Sign Up</button>
+                </form>
+                <div id="formMessage"></div>
+            </div>
+            
+            <div class="slide" id="slide2">
+                Slide 2
+            </div>
+            <div class="slide">Slide 3</div>
+            <div class="slide">Slide 4</div>
+        </div>
+        <div class="section">Section 2</div>
+        <div class="section">Section 3</div>
+        <div class="section">Section 4</div>
+    </div>
+
+    <!-- Fixed Button to go to different sections -->
+    <div class="navigation-buttons">
+        <button id="goToSection1">Go to Section 1</button>
+        <button id="goToSection2">Go to Section 2</button>
+        <button id="goToSection3">Go to Section 3</button>
+        <button id="goToSection4">Go to Section 4</button>
+    </div>
+
+    <!-- Fixed buttons to go to slides (Section 1) -->
+    <div class="slide-buttons">
+        <button id="goToSlide1">Slide 1</button>
+        <button id="goToSlide2">Slide 2</button>
+        <button id="goToSlide3">Slide 3</button>
+        <button id="goToSlide4">Slide 4</button>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Fullpage JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
